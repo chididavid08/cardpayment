@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <title>Frontend Mentors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              White: "hsl(0, 0%, 100%)",
+              Lightgrayishviolet: "hsl(270, 3%, 87%)",
+              Darkgrayishviolet: "hsl(279, 6%, 55%)",
+              Verydarkviolet: "hsl(278, 68%, 11%)",
+            },
+
+            fontFamily: {
+              SpaceGrotesk: "Space Grotesk",
+            },
+
+            fontweight: {
+              weight: "500",
+            },
+
+            position: {
+              33: "33rem",
+              22: "21rem",
+              37.5: "38.8rem",
+              8.3: "8.5rem",
+              3.6: "3.6rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="flex flex-row">
+      <!-- Images and text section -->
+      <div class="">
+        <img src="images/bg-main-desktop.png" alt="" class="absolute" />
+        <div class="">
+          <img
+            src="images/bg-card-front.png"
+            alt=""
+            class="relative -right-40 top-12"
+          />
+          <p
+            class="relative left-48 -bottom-2 text-[White] text-sm font-['Space Grotesk']"
+          >
+            JANE APPLESEED
+          </p>
+          <p
+            class="relative bottom-4 text-white left-[33rem] tracking-wider text-sm"
+          >
+            00/00
+          </p>
+          <p
+            class="relative text-white bottom-36 text-3xl left-20 tracking-widest whitespace-pre"
+          >
+            0000 0000 0000 0000
+          </p>
+
+          <button
+            class="relative bottom-80 left-48 bg-white rounded-full w-12 h-12"
+          ></button>
+
+          <button
+            class="relative bottom-[21rem] left-52 border-2 border-white w-6 h-6 rounded-full"
+          ></button>
+        </div>
+
+        <div class="-mt-24">
+          <img
+            src="images/bg-card-back.png"
+            alt=""
+            class="relative -right-64"
+          />
+          <p class="relative bottom-[8.5rem] left-[38.8rem] text-white">000</p>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="items-center ml-80 mt-32">
+        <form>
+          <label for=" CARDHOLDER" class="text-xs font-bold tracking-wider">
+            CARDHOLDER NAME</label
+          >
+          <br />
+          <input
+            type="text"
+            name="CARDHOLDER"
+            class="border-2 py-2 w-96 mt-1 pl-2 rounded-lg border-b-gray-300"
+            placeholder="e.g Jane Appleseed"
+          />
+          <br />
+          <br />
+
+          <label for=" CARDHOLDER" class="font-bold text-xs tracking-wider">
+            CARD NUMBER</label
+          >
+          <br />
+          <input
+            type="text"
+            name="CARDNUMBER"
+            class="border-2 py-2 w-96 whitespace-pre mt-1 pl-2 rounded-lg border-t-gray-300"
+            placeholder="e.g  1234 5678 9123 000"
+          />
+          <br />
+          <br />
+
+          <label for="Expiry Date" class="font-bold text-xs tracking-wider">
+            Exp. Date (MM/YY)</label
+          >
+          <br />
+          <select
+            name="Months"
+            id="Months"
+            class="border-2 w-16 rounded-lg py-1 text-gray-400 tracking-wider border-b-gray-300"
+          >
+            <option value="MM">MM</option>
+            <option value="January">January</option>
+            <option value="Febuary">Febuary</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+
+          <select
+            name="Years"
+            id="Years"
+            class="border-2 w-16 rounded-lg py-1 text-gray-400 tracking-widest border-b-gray-300"
+          >
+            <option value="YY">YY</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
+
+          <div class="ml-36 -mt-[3.6rem]">
+            <label for="CVC" class="text-xs font-bold">CVC</label><br />
+            <input
+              type="text"
+              placeholder="e.g  123"
+              class="whitespace-pre rounded-lg border-2 py-1 pl-2 w-60 border-b-gray-300"
+            />
+          </div>
+
+          <br />
+          <br />
+
+          <input
+            type="submit"
+            value="Confirm"
+            class="-ml-0 -mt-4 w-96 rounded-lg bg-Verydarkviolet text-white px-32 py-3.5"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
